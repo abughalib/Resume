@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+
+body {
+  font-family: 'EB Garamond', Helvetica, sans-serif, Arial;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 140, 255);
+}
+
+div,
+p {
+  margin: 0.1rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0 3px;
+}
+
+hr {
+  color: rgb(185, 185, 185);
+  margin: 1px 0;
+  border: 1px solid;
+}
+
+.heading {
+  margin: 1px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* Common Styles for all */
+
+.skills div,
+.experience div,
+.projects div {
+  padding: 0 10px;
+}
+
+/* Personal Info */
+
+.personal_info {
+  text-align: center;
+}
+
+.personal_info h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.personal_info .p-info {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.personal_info .p-link {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* Skills */
+
+.sep {
+  margin: 0 5px;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skills-list div {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  text-align: center;
+  margin: 0;
+}
+
+.skills-list div ul {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: auto 0;
+}
+
+.skills-list div p {
+  font-weight: bold;
+}
+
+/* Experience */
+
+.exp-company-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.exp-company-role {
+  font-weight: bold;
+}
+
+.experience div ul {
+  margin: 0 0 0 30px;
+  list-style-type: disc;
+}
+
+/* Projects */
+
+.projects ul {
+  margin: 0 0 0 20px;
+  list-style-type: disc;
+}
+
+.projects div.project-header {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-header p {
+  display: flex;
+  flex-direction: row;
+}
+
+.project-header p:first-child {
+  font-weight: bold;
+}
