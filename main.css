@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
 
 body {
-  font-family: 'EB Garamond', Helvetica, sans-serif, Arial;
+  font-family: "EB Garamond", Helvetica, sans-serif, Arial;
   font-size: 12px;
 }
 
@@ -12,7 +12,7 @@ a {
 
 div,
 p {
-  margin: 0.1rem;
+  margin: 0;
 }
 
 ul {
@@ -41,6 +41,7 @@ hr {
 
 .skills div,
 .experience div,
+.education div,
 .projects div {
   padding: 0 10px;
 }
@@ -143,4 +144,25 @@ hr {
 
 .project-header p:first-child {
   font-weight: bold;
+}
+
+/* Education */
+
+.university-name {
+  font-weight: bold;
+}
+
+.education div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.left .education-header {
+  display: flex;
+  flex-direction: column;
+}
+
+div.left {
+  padding: 0;
 }
