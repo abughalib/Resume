@@ -1,6 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+/* Global */
 
-body {
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
+*/ body {
   font-family: "EB Garamond", Helvetica, sans-serif, Arial;
   font-size: 12px;
 }
@@ -13,6 +14,7 @@ a {
 div,
 p {
   margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -29,6 +31,16 @@ hr {
   color: rgb(185, 185, 185);
   margin: 1px 0;
   border: 1px solid;
+  margin: 0 0 10px 0;
+}
+
+/* Common Styles for all */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 10px;
 }
 
 .heading {
@@ -37,56 +49,63 @@ hr {
   font-size: 1rem;
 }
 
-/* Common Styles for all */
-
-.skills div,
-.experience div,
-.education div,
-.projects div {
-  padding: 0 10px;
+.list-item-h,
+.list-item-v {
+  padding: 0 0 0 10px;
 }
 
 /* Personal Info */
 
-.personal_info {
-  text-align: center;
+.p-name {
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-.personal_info h1 {
+.center {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.md-3 {
+  margin: 3px 0;
+}
+
+.p-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.p-info {
+  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   font-weight: 600;
-  font-size: 1rem;
-  margin: 0;
+  padding: 0;
 }
 
-.personal_info .p-info {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.personal_info .p-link {
+.p-info a,
+.p-info p {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin: 0 1px;
 }
 
-/* Skills */
-
-.sep {
-  margin: 0 5px;
-}
-
-.skills-list {
+.container-list {
   display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.horizontal {
   flex-direction: column;
   justify-content: center;
 }
 
-.skills-list div {
+.list-item-h {
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -94,7 +113,7 @@ hr {
   margin: 0;
 }
 
-.skills-list div ul {
+.list-item-h ul {
   display: flex;
   flex: 1;
   flex-direction: row;
@@ -102,67 +121,46 @@ hr {
   margin: auto 0;
 }
 
-.skills-list div p {
+.list-item-h p {
   font-weight: bold;
 }
 
-/* Experience */
+/* Skills */
 
-.exp-company-header {
+.skills-row p {
+  flex: 1;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  text-align: start;
 }
 
-.exp-company-role {
-  font-weight: bold;
+.skills-row ul {
+  flex: 3;
 }
 
-.experience div ul {
-  margin: 0 0 0 30px;
-  list-style-type: disc;
+/* Experience & Projects */
+
+.sep {
+  margin: 0 1px;
 }
 
-/* Projects */
-
-.projects ul {
-  margin: 0 0 0 20px;
-  list-style-type: disc;
-}
-
-.projects div.project-header {
-  display: flex;
-  padding: 0;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.project-header p {
-  display: flex;
-  flex-direction: row;
-}
-
-.project-header p:first-child {
-  font-weight: bold;
-}
-
-/* Education */
-
-.university-name {
-  font-weight: bold;
-}
-
-.education div {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.left .education-header {
+.list-item-v {
   display: flex;
   flex-direction: column;
+  margin: 3px 0;
 }
 
-div.left {
-  padding: 0;
+.list-item-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.list-item-v .list-item-description {
+  padding: 0 0 0 20px;
+}
+
+.list-item-description ul {
+  list-style-type: disc;
 }

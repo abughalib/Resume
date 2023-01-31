@@ -1,49 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
     <meta charset="utf-8" />
     <title>Abu_Resume</title>
     <link rel="stylesheet" type="text/css" href="main.css" />
   </head>
   <body>
-    <div class="personal_info">
-      <div class="p-name">
-        <h1>Abu Ghalib</h1>
-      </div>
-      <div class="p-profession">
-        <p>Full Stack Web Developer</p>
-      </div>
-      <div class="p-info">
-        <p class="p-email">
+    <div class="container">
+      <div class="container-list center">
+        <div class="list-item-v p-info">
+          <h1 class="heading p-name">Abu Ghalib</h1>
+          <p>Full Stack Developer</p>
+        </div>
+        <div class="list-item-h center p-info">
           <a href="mailto:abughalib64@gmail.com">abughalib64@gmail.com</a>
-        </p>
-        <p>|</p>
-        <p class="p-phone"><a href="tel:+91909771270">909771270</a></p>
-        <p>|</p>
-        <p class="p-address">Sector 73, Noida, Uttar Pradesh</p>
-      </div>
-      <div class="p-link">
-        <p>
-          <a class="p-link-github" href="https://www.github.com/abughalib"
-            >GitHub</a
-          >
-        </p>
-        <p>|</p>
-        <p>
-          <a
-            class="p-link-linkedin"
-            href="https://www.linkedin.com/in/abughalib"
-            >LinkedIn</a
-          >
-        </p>
+          <p>|</p>
+          <a href="tel:+91909771270">+91909771270</a>
+          <p>|</p>
+          <p class="p-address">Sector 73, Noida, Uttar Pradesh</p>
+        </div>
+        <div class="list-item-h center p-info p-link">
+          <a href="https://www.github.com/abughalib">GitHub</a>
+          <p>|</p>
+          <a href="https://www.linkedin.com/in/abughalib">LinkedIn</a>
+        </div>
       </div>
     </div>
-
-    <div class="skills">
+    <div class="container">
       <h1 class="heading">Skills</h1>
       <hr />
-      <div class="skills-list">
-        <div class="skills-languages">
+      <div class="container-list horizontal">
+        <div class="list-item-h skills-row">
           <p>Programming Languages:</p>
           <ul>
             <li>Rust</li>
@@ -57,7 +44,7 @@
             <li>Dart</li>
           </ul>
         </div>
-        <div class="skills-frameworks">
+        <div class="list-item-h skills-row">
           <p>Libraries/Frameworks:</p>
           <ul>
             <li>React</li>
@@ -69,7 +56,7 @@
             <li>React-Native</li>
           </ul>
         </div>
-        <div class="skills-tools">
+        <div class="list-item-h skills-row">
           <p>Tools/Cloud Platform:</p>
           <ul>
             <li>Git</li>
@@ -80,7 +67,7 @@
             <li>Oracle Cloud</li>
           </ul>
         </div>
-        <div class="skills-database">
+        <div class="list-item-h skills-row">
           <p>Databases:</p>
           <ul>
             <li>PostgreSQL</li>
@@ -93,94 +80,99 @@
         </div>
       </div>
     </div>
-    <div class="experience">
+    <div class="container">
       <h1 class="heading">Experience</h1>
       <hr />
-      <div class="exp-1">
-        <div class="exp-company-header">
-          <p class="exp-company-role">
-            Alphaveric | Full Stack Web Developer Intern
-          </p>
-          <p class="exp-company-time">
-            Bengaluru, Karnataka | Apr 2022 - Sept 2022
-          </p>
+      <div class="container-list">
+        <div class="list-item-v">
+          <div class="list-item-header">
+            <p>Alphaveric | Full Stack Web Developer Intern</p>
+            <p>Bengaluru, Karnataka | Apr 2022 - Sept 2022</p>
+          </div>
+          <div class="list-item-description">
+            <ul>
+              <li>
+                Implemented candidate verification portal using Django,
+                resulting in a 30% increase in company growth.
+              </li>
+              <li>
+                Designed a user-friendly web page interface resulting in
+                improved user experience, as evidenced by a 25% increase in
+                website traffic and a 20% decrease in bounce rate.
+              </li>
+              <li>
+                Developed and executed unit testing strategy using Django Unit
+                Testing, leading to a 20% decrease in runtime bugs.
+              </li>
+              <li>
+                Managed and maintained the database, resulting in a 50% increase
+                in database uptime and a 15% reduction in data errors.
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul>
-          <li>
-            Implemented candidate verification portal using Django, resulting in
-            a 30% increase in company growth.
-          </li>
-          <li>
-            Designed user-friendly web page interface resulting in improved user
-            experience, as evidenced by a 25% increase in website traffic and a
-            20% decrease in bounce rate.
-          </li>
-          <li>
-            Developed and executed unit testing strategy using Django Unit
-            Testing, leading to a 20% decrease in runtime bugs.
-          </li>
-          <li>
-            Managed and maintained the database, resulting in a 50% increase in
-            database uptime and a 15% reduction in data errors.
-          </li>
-        </ul>
-      </div>
-      <div class="exp-2">
-        <div class="exp-company-header">
-          <p class="exp-company-role">
-            Geminid Systems Inc | Software Developer Intern
-          </p>
-          <p class="exp-company-time">Redwood, CA | Apr 2022 - Sept 2022</p>
+        <div class="list-item-v">
+          <div class="list-item-header">
+            <p>Geminid Systems Inc | Software Developer Intern</p>
+            <p>Redwood, CA | Apr 2022 - Sept 2022</p>
+          </div>
+          <div class="list-item-description">
+            <ul>
+              <li>
+                Worked with a time of 4 people, integrating Zoom SDK into an
+                existing application using Java and React, which resulted in a
+                25% increase in meeting efficiency and a 20% reduction in
+                technical difficulties during a meeting process.
+              </li>
+              <li>
+                Conducted application testing on Docker and Cloud environments,
+                ensuring compatibility and scalability which saved many hours of
+                hassle when deploying a new project.
+              </li>
+              <li>
+                Collaborated in an agile manner with cross-functional team
+                sprints, participated in 100% of the daily scrums.
+              </li>
+            </ul>
+          </div>
         </div>
-        <ul>
-          <li>
-            Integrated Zoom SDK into existing application using Java and React,
-            resulting in a 25% increase in meeting efficiency and a 20%
-            reduction in technical difficulties during meetings.
-          </li>
-          <li>
-            Conducted application testing on Docker and Cloud environments,
-            ensuring compatibility and scalability which saved many hours of
-            hassle when deploying new project.
-          </li>
-          <li>
-            Collaborated in an agile manner with cross-functional team sprints,
-            participated in 100% of the daily scrums.
-          </li>
-        </ul>
       </div>
     </div>
-    <div class="projects">
+    <div class="container">
       <h1 class="heading">Open Source Contribution / Projects</h1>
       <hr />
-      <div class="projects">
-        <div class="project-1">
-          <div class="project-header">
+      <div class="container-list">
+        <div class="list-item-v">
+          <div class="list-item-header">
             <p>
               JavaScript Interpreter <span class="sep">|</span>
               <a
-                href="https://github.co5m/abughalib/javaScript-inbrowser-interpreter"
+                href="https://github.com/abughalib/javaScript-inbrowser-interpreter"
                 >Link</a
               >
             </p>
             <p>TypeScript, Node, ES Build, React, Redux</p>
           </div>
-          <ul>
-            <li>
-              Designed a browser-based tool for building and running JavaScript,
-              TypeScript, and JSX applications without the need for downloading
-              any additional software which reduced the hassle and time of
-              installing packages on local development environment.
-            </li>
-            <li>
-              Implemented browser-based tool similar to Jupyter Notebook for
-              JavaScript and Markdown, allowing for the building and execution
-              of JavaScript in Browser saves time when testing a small project.
-            </li>
-          </ul>
+          <div class="list-item-description">
+            <ul>
+              <li>
+                Developed a one-step solution for writing JavaScript,
+                TypeScript, and JSX applications.
+              </li>
+              <li>
+                Eliminated the need for downloading additional software, and
+                reduced the hassle and time of installing packages in a local
+                development environment.
+              </li>
+              <li>
+                It is similar to Jupyter Notebook but for JavaScript with
+                Markdown support, adding new cells, resizing, and deleting them.
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="project-2">
-          <div class="project-header">
+        <div class="list-item-v">
+          <div class="list-item-header">
             <p>
               Looking For Team Bot <span class="sep">|</span>
               <a href="https://github.com/abughalib/LookingForTeam-discord-bot"
@@ -189,21 +181,22 @@
             </p>
             <p>TypeScript, Discord.js, Node, CI/CD, Docker, SQLite</p>
           </div>
-          <ul>
-            <li>
-              Developed a Discord bot that allows users to find teammates for
-              their Gameplay Style which reduced the message cluttering by
-              significant margin.
-            </li>
-            <li>
-              It was launched with the aim to solve the problem of looking for a
-              Team on the Discord Server which is being used by 4K+ users as of
-              now.
-            </li>
-          </ul>
+          <div class="list-item-description">
+            <ul>
+              <li>
+                Developed a Discord bot that allows users to find teammates for
+                their Gameplay Style, reducing the message cluttering by a
+                significant margin.
+              </li>
+              <li>
+                Launched to address the issue of searching for teams on Discord
+                Server, It is currently used by over 4,000 users.
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="project-3">
-          <div class="project-header">
+        <div class="list-item-v">
+          <div class="list-item-header">
             <p>
               Open Food Facts Smooth App <span class="sep">|</span>
               <a href="https://http://github.com/openfoodfacts/smooth-app"
@@ -212,23 +205,25 @@
             </p>
             <p>Flutter, Dart</p>
           </div>
-          <ul>
-            <li>
-              Implemented language filter for the app, increasing accessibility
-              for non-English speaking users.
-            </li>
-            <li>
-              Contributed to the UI improvements of the app, improving the UI
-              experience significantly.
-            </li>
-            <li>
-              Contributed to add unit tests for UI and functionality, reduced
-              the bugs by 20%.
-            </li>
-          </ul>
+          <div class="list-item-description">
+            <ul>
+              <li>
+                Implemented language filter for the app, increasing
+                accessibility for non-English speaking users.
+              </li>
+              <li>
+                Contributed to the UI improvements of the app, improving the UI
+                experience significantly.
+              </li>
+              <li>
+                Contributed to add unit tests for UI and functionality, reduced
+                the bugs by 20%.
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="project-4">
-          <div class="project-header">
+        <div class="list-item-v">
+          <div class="list-item-header">
             <p>
               Candidate Verification Report<span class="sep">|</span>
               <a
@@ -238,23 +233,25 @@
             </p>
             <p>Python 3, Django, PostgreSQL, SQLite, Docker, CI/CD</p>
           </div>
-          <ul>
-            <li>
-              Developed and implemented software to automate and improve the
-              candidate verification process.
-            </li>
-            <li>
-              Reduced paperwork and manual labor through the use of technology
-              up to 90%.
-            </li>
-            <li>
-              Improved efficiency and accuracy in candidate verification process
-              by eliminating manual input.
-            </li>
-          </ul>
+          <div class="list-item-description">
+            <ul>
+              <li>
+                Developed and implemented software to automate and improve the
+                candidate verification process.
+              </li>
+              <li>
+                Reduced paperwork and manual labor through the use of technology
+                up to 90%.
+              </li>
+              <li>
+                Improved efficiency and accuracy in candidate verification
+                process by eliminating manual input.
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="project-5">
-          <div class="project-header">
+        <div class="list-item-v">
+          <div class="list-item-header">
             <p>
               English Dictionary Server Database <span class="sep">|</span>
               <a href="https://github.com/abughalib/English-Dictionary-Database"
@@ -263,62 +260,64 @@
             </p>
             <p>Rust, PostgreSQL, Actix.rs, Diesel.rs</p>
           </div>
-          <ul>
-            <li>
-              Developed an Open Source English Definition for use in PDF
-              readers.
-            </li>
-            <li>
-              Made the definition freely available for individuals to use and
-              incorporate into their projects.
-            </li>
-            <li>
-              Developed an Open Source English Definition to aid non-native
-              English speakers in understanding word meanings while reading
-              PDFs.
-            </li>
-          </ul>
+          <div class="list-item-description">
+            <ul>
+              <li>
+                Developed Open Source English Definition API for use in PDF
+                readers to improve the reading experience and reduce
+                frustration.
+              </li>
+              <li>
+                Aimed to assist non-native English speakers in understanding
+                word meanings while reading PDFs
+              </li>
+              <li>
+                Made definition freely available for personal and project use.
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="project-6">
-          <div class="project-header">
+        <div class="list-item-v">
+          <div class="list-item-header">
             <p>
               Zoom-SDK <span class="sep">|</span>
               <a href="https://github.com/abughalib/zoom-sdk">Link</a>
             </p>
             <p>JavaScript, React-Native, Kotlin, Java</p>
           </div>
-          <ul>
-            <li>
-              Created an SDK (Software Development Kit) to enable seamless
-              integration of Zoom functionality into React-Native applications.
-            </li>
-            <li>
-              Developed SDK to facilitate video conferencing, screen sharing,
-              and other Zoom features within the React-Native application.
-            </li>
-            <li>
-              Implemented efficient and secure communication between the
-              React-Native application and the Zoom platform.
-            </li>
-          </ul>
+          <div class="list-item-description">
+            <ul>
+              <li>
+                Created a Zoom SDK to enable seamless integration of Zoom
+                functionality into an existing React-Native application, which
+                can reduce the meeting process by 20-30%
+              </li>
+              <li>
+                It facilitates video conferencing, screen sharing, and other
+                Zoom features within the React-Native application.
+              </li>
+              <li>
+                It allows efficient and secure communication between the
+                React-Native application and the Zoom platform.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-    <div class="education">
+    <div class="container">
       <h1 class="heading">Education</h1>
       <hr />
-      <div class="education-1">
-        <div class="left">
-          <div class="education-header">
-            <p class="university-name">
-              Aryabhatta Knowledge University, Patna, Bihar
-            </p>
-            <p>Bachelors of Computer Science</p>
-            <p>GPA:8.04/10.0</p>
-          </div>
-        </div>
-        <div class="right">
+      <div class="list-item-v">
+        <div class="list-item-header">
+          <p class="university-name">
+            Aryabhatta Knowledge University, Patna, Bihar
+          </p>
           <p>Sept 2019 - Jun 2023</p>
+        </div>
+        <div class="left">
+          <p>Bachelors of Computer Science and Engineering</p>
+          <p>GPA:8.04/10.0</p>
         </div>
       </div>
     </div>
