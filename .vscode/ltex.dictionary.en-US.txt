@@ -4,3 +4,5 @@ Geminid
 Alphaveric
 Ghalib
 SurrealDB
+ESBuild
+transpiler
