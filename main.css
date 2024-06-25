@@ -1,9 +1,5 @@
-/* Global */
-
-@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap");
-
 body {
-  font-family: "EB Garamond", Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
 }
 
@@ -64,8 +60,12 @@ hr {
 /* Personal Info */
 
 .p-name {
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+
+.heading-info div {
+  margin: 2px 0;
 }
 
 .center {
@@ -172,6 +172,7 @@ hr {
 
 .light {
   font-weight: unset;
+  font-style: italic;
 }
 
 .list-item-v .list-item-description {
